@@ -22,19 +22,19 @@
             </div>
             <div class="text container-juegos">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet laboriosam voluptatem optio hic ipsum. Recusandae deleniti consequatur nulla quo amet. Ipsum consectetur assumenda inventore laboriosam vitae nam ipsa nostrum dolorum?
+                    Somos una empresa que se dedica a la venta de juegos de ps4
                 </p>
             </div>
         </div>
         <div class="container container-subtitulos">
             <div class="subtitulos ">
                 <h3>
-                    Horas de atencion
+                    Horario de atencion
                 </h3>
             </div>
             <div class="text container-juegos">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magnam dignissimos odio, veniam tempore inventore totam laborum saepe eos officiis ducimus qui tenetur suscipit a quas. Repellendus nemo consequuntur sit.
+                    De lunes a viernes de 10:00 a 23:00
                 </p>
             </div>
         </div>
