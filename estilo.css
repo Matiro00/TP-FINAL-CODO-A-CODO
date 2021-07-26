@@ -1,0 +1,85 @@
+header,footer{
+    background-color: #161616;
+    
+}
+html,body{
+    background-image: url('img/background.png');
+    height: 60%;
+}
+.contenidoPrincipal{
+    background-color: #131313;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.hidden{
+    display: none;
+}
+.navbar{
+    border-bottom: black 30px thick;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+    margin-left: 120px;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: arial;
+    color: white;
+}
+
+.nav-item>a:hover {
+    color: #1b8e62;
+}
+.form-control{
+    padding-right: 70px;
+}
+.container-subtitulos, .container-juegos{
+    padding-top: 20px;
+}
+.subtitulos{
+    color:white;
+    background-color: green;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+.text{
+    color: white;
+}
+.firma{
+    color: white;
+    font-style: italic;
+    text-align: end;
+    padding-bottom: 10px;
+    padding-right: 20%;
+}
+.card-img-top{
+    height: 400px;
+    width: 400px;
+
+}
+.card-body{
+    background-color: #131313;
+    color: white;
+
+}
+.card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.btn-games{
+    background-color: rgb(0, 185, 0);
+    width: 100%
+}
+.btn-games:hover{
+    background-color: rgb(0, 117, 0);
+}
+
+.card{
+    border: none;
+}
+
+.col-juegos{
+    border:green;
+}
