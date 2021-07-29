@@ -1,10 +1,7 @@
 <?php
 require ("Usuario.php");
 session_start();
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpassword = "";
-$dbname = "xyar";
+require("config.php");
 
 $conn = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
 if (!$conn) {

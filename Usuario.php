@@ -1,7 +1,7 @@
 <?php
 class Usuario{
-    private string $name;
-    private string $clave; 
+    private  $name;
+    private  $clave; 
 
 	
 

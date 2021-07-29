@@ -1,7 +1,6 @@
 <?php
 require ("Usuario.php");
 session_start();
-
 $usuario=new Usuario($_POST["user"],$_POST["password"]);
 if (empty($usuario->getName()) or empty($usuario->getClave())) {
     $_SESSION['error'] = "Debe ingresar un nombre y constraseña".$usuario->getName();
