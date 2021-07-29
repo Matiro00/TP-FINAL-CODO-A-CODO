@@ -1,0 +1,24 @@
+<?php
+session_start();
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpassword = "";
+$dbname = "xyar";
+
+$conn = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
+if (!$conn) {
+    die("No se encuentra una conexion: " . mysqli_connect_error());
+}
+else{
+$usuario=$_SESSION['cuenta'];
+$query = mysqli_query($conn, "INSERT INTO USUARIOS (nombre,clave) VALUES ('" . $usuario->getName() . "','" . $usuario->getClave() . "')");
+    if (mysqli_error($conn)) {
+        $_SESSION['error'] = "Error inesperado. Intente mas tarde";
+        unset($_SESSION['cuenta']);
+        header("Location:" . $_GET["continue"]);
+    } else {
+        $_SESSION['confirmar'] = "Usuario creado con exito";
+        unset($_SESSION['cuenta']);
+        header("Location:" . $_GET["continue"]);
+    }
+}

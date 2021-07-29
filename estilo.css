@@ -32,8 +32,14 @@ html,body{
 .nav-item>a:hover {
     color: #1b8e62;
 }
+.container-form{
+    padding-left: 160px;
+}
 .form-control{
-    padding-right: 70px;
+    padding-right: 190px;
+}
+.col-top-spacing{
+    padding-top: 10px;
 }
 .container-subtitulos, .container-juegos{
     padding-top: 20px;
@@ -46,6 +52,21 @@ html,body{
 }
 .text{
     color: white;
+    text-align: left;
+}
+.welcome-text{
+    color: white;
+    text-align:center;
+}
+.error-text{
+    color: red;
+    text-align: start;
+    margin-right: -30px;
+    padding-right: 50px;
+}
+.welcome{
+    padding-right: 100px;
+    cente
 }
 .firma{
     color: white;
