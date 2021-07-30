@@ -9,9 +9,46 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <?php include "basic_structs/header.html"?>
+    <?php include "basic_structs/header.php"?>
     <div class="container contenidoPrincipal">
-        
+        <div class="container container-juegos">
+            <div class="row">
+                <?php
+                require("config.php");
+
+                $conn = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
+                if (!$conn) {
+                    die("No se encuentra una conexion: " . mysqli_connect_error());
+                }
+                else{
+                    $query = mysqli_query($conn, "SELECT * FROM `juego` ORDER BY id desc");
+                    $cont=0;
+                    $aux=0;
+                    while($juego=mysqli_fetch_array($query)){
+                            if($cont==3){
+                                echo '<div class="row">';
+                                $cont=0;
+                                $aux++;
+                            }
+                            echo '<div class="col-4 col-juegos">
+                                                <div class="card card-games">
+                                                <img class="card-img-top" src='.$juego['imagen'].' alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">'.$juego['nombre'].'</h5>
+                                                    <p class="card-text">$'.$juego['precio'].'</p>
+                                                    <a href="#" class="btn btn-games">Consultar</a>
+                                                </div>
+                                            </div>
+                                            </div>';      
+                            $cont++;   
+                    }
+                    while($aux!=0){
+                        echo'</div>';
+                        $aux--;
+                    }
+                }?>
+            </div>
+        </div>
     </div>
     <?php include "basic_structs/footer.html"?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>

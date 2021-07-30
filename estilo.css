@@ -32,6 +32,12 @@ html,body{
 .nav-item>a:hover {
     color: #1b8e62;
 }
+.card{
+    border: none;
+}
+.col-juegos{
+    width: fit-content;
+}
 .container-form{
     padding-left: 160px;
 }
@@ -74,10 +80,11 @@ html,body{
     padding-bottom: 10px;
     padding-right: 20%;
 }
-.card-img-top{
-    height: 400px;
-    width: 400px;
 
+.card-img-top {
+    width: 400px;
+    height: 400px;
+   
 }
 .card-body{
     background-color: #131313;
@@ -96,10 +103,4 @@ html,body{
     background-color: rgb(0, 117, 0);
 }
 
-.card{
-    border: none;
-}
 
-.col-juegos{
-    border:green;
-}

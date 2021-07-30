@@ -30,36 +30,7 @@ $link = "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
             </h3>
             <div class="container container-juegos">
                 <div class="row">
-                    <div class="col-sm col-juegos">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/oddysey.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Assasin's creed: Oddysey</h5>
-                                <p class="card-text">$1900</p>
-                                <a href="#" class="btn btn-games">Consultar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/images.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">ARK: Survival Evolved</h5>
-                                <p class="card-text">$2100</p>
-                                <a href="#" class="btn btn-games">Consultar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/Valhalla.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Assasin's creed: Valhalla</h5>
-                                <p class="card-text">$3100</p>
-                                <a href="#" class="btn btn-games">Consultar</a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php include "./juegosNuevos.php";?>
                 </div>
             </div>
         </div>
