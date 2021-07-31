@@ -2,9 +2,18 @@ header,footer{
     background-color: #161616;
     
 }
+footer{
+    height: 10%;
+}
 html,body{
     background-image: url('img/background.png');
     height: 60%;
+}
+.no_results{
+    margin-top:50%;
+    margin-bottom: 50%;
+    color:green;
+    font-style: italic;
 }
 .contenidoPrincipal{
     background-color: #131313;
@@ -60,6 +69,60 @@ html,body{
     color: white;
     text-align: center;
 }
+.container-underline{
+    border-top: #131313;
+    border-left: #131313;
+    border-right: #131313;
+    border-bottom: green;
+    border-style: solid;
+    
+}
+.searchBarGroup{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    
+    
+}
+.searchBar__input{
+    border-color: rgb(0, 196, 0);
+    border-radius: 20px;
+    height: 50px;
+    width: 60%;
+    border-style: groove;
+    border-style: solid;
+    padding-left: 20px;
+}
+.searchBar__input:focus{
+    outline: none;
+}
+.searchBar__submit{
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: rgb(0, 196, 0);
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border: none;
+    text-align: center;
+}
+.searchBar__submit:active{
+    border-color: rgb(0, 61, 0);
+}
+.searchBar__submit:hover{
+    background-color: rgb(0, 117, 0);
+}
+.search_icon{
+    height: 20px;
+}
+.container_search_word{
+    padding-top: 30px;
+    text-align: left;
+    color: rgb(0, 196, 0);;
+    font-style: italic;
+    
+
+}
+
 .welcome-text{
     color: white;
     text-align:center;
