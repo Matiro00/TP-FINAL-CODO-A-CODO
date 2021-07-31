@@ -12,7 +12,7 @@
     <?php include "basic_structs/header.php"?>
     <div class="container contenidoPrincipal">
         <div class="container searchContainer ">
-            <form action="./juegoBuscados.php" method="get" class="form-inline searchBarGroup">
+            <form action="./juegosBuscados.php" method="get" class="form-inline searchBarGroup">
                 <input type="text" name="buscar" placeholder="Buscar.." class="searchBar__input">
                 <button type="submit" class="searchBar__submit"><img src="./img/search.svg" alt="Search" class="search_icon"></button>
             </form>
