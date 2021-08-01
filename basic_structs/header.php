@@ -17,6 +17,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./contactos.php">Nosotros</a>
                         </li>
+                        <?php if (isset($prioridad) and $prioridad == 0) { ?>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gestionar
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item dropdown-manager-items" href="#">Ingresar juego</a></li>
+                                </ul>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </div>
 

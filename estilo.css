@@ -122,7 +122,20 @@ html,body{
     
 
 }
-
+.dropdown{
+    padding-right: 80px;
+}
+.dropdown-menu{
+    margin-left: 35%;
+    background-color: #131313;
+    border-color:rgb(0, 65, 0);
+}
+.dropdown-manager-items{
+    color: rgb(0, 209, 0);
+}
+.dropdown-manager-items:hover{
+    background-color: green;
+}
 .welcome-text{
     color: white;
     text-align:center;
