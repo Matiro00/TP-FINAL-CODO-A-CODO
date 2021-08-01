@@ -1,5 +1,5 @@
 <?php
 $dbhost = "localhost";
-$dbuser = "root";
-$dbpassword = "";
-$dbname = "xyar";
+$dbuser = "id17314474_xyaradmin";
+$dbpassword = "Test123456790!";
+$dbname = "id17314474_xyar";
