@@ -1,3 +1,4 @@
+<?php include "settingWeb.php"?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
