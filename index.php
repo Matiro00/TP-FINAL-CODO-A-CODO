@@ -14,7 +14,6 @@
 
 <body>
     <?php include "basic_structs/header.php"?>
-    <? echo var_dump($prioridad)?>
     <div class="container contenidoPrincipal">
         <div class="container container-subtitulos">
             <h3 class="subtitulos">

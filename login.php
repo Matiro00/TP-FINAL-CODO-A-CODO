@@ -20,6 +20,6 @@ if ($encontrado == 1) {
     $_SESSION['prioridad']=$query['prioridad'];
     header("Location:" . $_GET["continue"]);
 } else {
-    $_SESSION['error'] = "Usuario o clave incorrectos";
+    $_SESSION['errorCuenta'] = "Usuario o clave incorrectos";
     header("Location:" . $_GET["continue"]);
 }

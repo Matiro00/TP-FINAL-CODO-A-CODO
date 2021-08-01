@@ -37,7 +37,9 @@ html,body{
     font-family: arial;
     color: white;
 }
-
+.dropdown {
+    display: inline-block;
+}
 .nav-item>a:hover {
     color: #1b8e62;
 }
@@ -107,6 +109,8 @@ html,body{
 }
 .searchBar__submit:active{
     border-color: rgb(0, 61, 0);
+    outline: none !important;
+    box-shadow: none;
 }
 .searchBar__submit:hover{
     background-color: rgb(0, 117, 0);
@@ -146,6 +150,12 @@ html,body{
     margin-right: -30px;
     padding-right: 50px;
 }
+.confirm-text{
+    color: green;
+    text-align: start;
+    margin-right: -30px;
+    padding-right: 50px;
+}
 .welcome{
     padding-right: 100px;
 }
@@ -178,5 +188,80 @@ html,body{
 .btn-games:hover{
     background-color: rgb(0, 117, 0);
 }
-
+.btn-confirm{
+    background-color: rgb(0, 185, 0);
+    width: 50%;
+    outline: none;
+}
+.btn-confirm:hover{
+    background-color: rgb(0, 117, 0);
+}
+.btn-confirm:active{
+    background-color: rgb(0, 71, 0);
+    outline: none !important;
+    box-shadow: none;
+}
+.btn-cancel{
+    background-color: red;
+    width: 50%;
+    
+}
+.btn-cancel:hover{
+    background-color: rgb(189, 0, 0);
+}
+.btn-cancel:active{
+    background-color: rgb(134, 0, 0);
+    outline: none !important;
+    box-shadow: none;
+}
+.btn-gestion{
+    margin-top: 20px;
+    width: 20%;
+    background-color: red;
+    margin-bottom: 20px;
+}
+.btn-gestion:hover{
+    background-color: rgb(189, 0, 0);
+}
+.btn-gestion:active{
+    background-color: rgb(134, 0, 0);
+    outline: none !important;
+    box-shadow: none;
+}
+.container-create-game{
+    width: 70%;
+}
+.form-title{
+    border-bottom: green solid;
+    text-align: start;
+    font-size: 30px;
+    font-style: oblique ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: green;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.form-item{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.form-text{
+    width: 80%;
+    margin-left: 10%;
+}
+.form-description{
+    height: 60px;
+}
+.form-img{
+    color: green;
+    display: block;
+    margin-bottom: 10%;
+    align-content: center;
+    margin-left: 30%;
+}
+.form-price{
+    width: 40%;
+    margin-left: 30%;
+}
 

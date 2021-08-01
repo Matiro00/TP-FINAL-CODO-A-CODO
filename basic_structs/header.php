@@ -23,7 +23,7 @@
                                     Gestionar
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item dropdown-manager-items" href="#">Ingresar juego</a></li>
+                                    <li><a class="dropdown-item dropdown-manager-items" href="./insertarJuego.php">Ingresar juego</a></li>
                                 </ul>
                             </li>
                         <?php } ?>
@@ -49,11 +49,11 @@
                             </div>
                             <div class="col-12 col-top-spacing">
                                 <input type="password" class="form-control" placeholder="Contraseña" name="password">
-                                <?php if (isset($_SESSION['error'])) { ?>
+                                <?php if (isset($_SESSION['errorCuenta'])) { ?>
                                     <div class="error-text">
-                                        <strong>Error: </strong> <?= $_SESSION['error']; ?>
+                                        <strong>Error: </strong> <?= $_SESSION['errorCuenta']; ?>
                                     </div>
-                                <?php unset($_SESSION['error']);
+                                <?php unset($_SESSION['errorCuenta']);
                                 } ?>
                             </div>
                             <div class="row">
