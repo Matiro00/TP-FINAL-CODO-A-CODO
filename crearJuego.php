@@ -1,7 +1,6 @@
 <?php
 
 require("config.php");
-session_start();
 $conn = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
 if (!$conn) {
     die("No se encuentra una conexion: " . mysqli_connect_error());
